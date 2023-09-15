@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * int _isalpha(int c) - entry point
+ * _isalpha - entry point
+ *
+ * @c: checks output
  *
  * Description: print _putchar
  *

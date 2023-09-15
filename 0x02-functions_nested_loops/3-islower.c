@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * int _islower(int c) - entry point
+ * _islower - entry point
+ *
+ * @c: checks output
  *
  * Description: print _putchar
  *

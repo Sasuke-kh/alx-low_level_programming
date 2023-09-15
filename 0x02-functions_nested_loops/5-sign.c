@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * main - entry point
+ *  print_sign - entry point
+ *
+ * @n: num
  *
  * Description: print _putchar
  *

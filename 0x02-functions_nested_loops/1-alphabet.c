@@ -2,7 +2,7 @@
 /**
  * main - entry point
  *
- * Description: print a~z
+ * Description: print a~z follwed by a new line
  *
  * Return: 0 (success)
  */

@@ -1,11 +1,13 @@
 #include "main.h"
+
 /**
- * main - entry point
+ * print_alphabet - entry point
  *
- * Description: print a   z follwed by a new line
+ * Description: print a to z using _putchar
  *
  * Return: 0 (success)
  */
+
 void print_alphabet(void)
 {
 	int ch;

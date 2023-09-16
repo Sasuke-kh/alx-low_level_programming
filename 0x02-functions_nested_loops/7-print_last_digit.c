@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * print_last_digit(int) - entry point
+ * print_last_digit - entry point
+ *
+ * @n: input num
  *
  * Description: print _putchar
  *

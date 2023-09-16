@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * int print_last_digit(int) - entry point
+ * print_last_digit(int) - entry point
  *
  * Description: print _putchar
  *
@@ -17,5 +17,5 @@ int print_last_digit(int n)
 		ld = n % 10;
 
 	_putchar(ld + '0');
-	return(ld);
+	return (ld);
 }

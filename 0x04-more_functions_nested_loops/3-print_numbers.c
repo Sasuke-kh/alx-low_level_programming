@@ -7,9 +7,9 @@
 
 void print_numbers(void)
 {
-	int digit = '0';
+	int digit = 0;
 
-	while (digit >= 0 && digit <= 9)
-		_putchar("%d", digit);
-	_putchar('\n')
+	while (digit <= 9)
+		_putchar(digit);
+	_putchar('\n');
 }

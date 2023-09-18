@@ -10,6 +10,9 @@ void print_numbers(void)
 	int digit ;
 
 	while (digit >= 0 && digit <=9)
-		_putchar(digit++);
+	{
+		_putchar(digit);
+		digit++;
+	}
 	_putchar('\n');
 }

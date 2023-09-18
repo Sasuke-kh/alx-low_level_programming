@@ -3,7 +3,8 @@
  * mul - Returns 1 if c is uppercase
  * Returns 0 otherwise
  *
- * @c: alphabet
+ * @a: digit
+ * @b: digit
  *
  * Return: always 0
  */

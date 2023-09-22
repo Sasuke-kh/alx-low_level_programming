@@ -8,16 +8,16 @@
 
 void rev_string(char *s)
 {
-	int 1, x;
+	int l, x;
 	char temp;
 
-	for (1 = 0; s[1] != '\0'; ++1)
+	for (l = 0; s[l] != '\0'; ++l)
 		;
 
-	for (x = 0; x < 1 / 2; x++)
+	for (x = 0; x < l / 2; x++)
 	{
 		temp = s[x];
-		s[x] = s[1 - 1 - x];
-		s[1 - 1 - x] = temp;
+		s[x] = s[l - 1 - x];
+		s[l - 1 - x] = temp;
 	}
 }

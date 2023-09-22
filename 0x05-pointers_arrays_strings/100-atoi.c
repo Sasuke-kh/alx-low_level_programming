@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _atio - resets *n to 98
+ * _atoi - resets *n to 98
  *
  * @s: parameter type char
  *

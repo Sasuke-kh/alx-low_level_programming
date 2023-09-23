@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _astrncat - resets *n to 98
+ * _strncat - resets *n to 98
  *
  * @dest: type char
  * @src: type char
@@ -19,10 +19,10 @@ char *_strncat(char *dest, char *src, int n)
 	while (dest[x])
 		x++;
 
-	for (x2 = 0; x2 < n && src[x2] !='\0'; x2++)
+	for (x2 = 0; x2 < n && src[x2] != '\0'; x2++)
 
 		dest[x + x2] = src[x2];
-	dest [x + x2] = '\0';
+	dest[x + x2] = '\0';
 
 	return (dest);
 }

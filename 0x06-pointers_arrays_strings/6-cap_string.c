@@ -16,7 +16,7 @@ int isLower(char c)
 /**
  * isDelimiter - skipper function
  *
- * @:c type char
+ * @c: type char
  *
  * Return: value
  */
@@ -35,8 +35,7 @@ int isDelimiter(char c)
 /**
  * cap_string - capitalizes all words of a string
  *
- * @s2: type char
- * @s1: char type
+ * @s: type char
  *
  * Return: value
  */

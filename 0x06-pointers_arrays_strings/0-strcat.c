@@ -3,7 +3,7 @@
 /**
  * _strcat - resets *n to 98
  *
- * @desr: type char
+ * @dest: type char
  * @src: char type
  *
  * Return: nu * sign

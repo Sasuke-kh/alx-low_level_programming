@@ -9,9 +9,8 @@
  * Return: value
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
-	char *str;
 	int x;
 
 	for (x = 0; str[x] != '\0'; x++)

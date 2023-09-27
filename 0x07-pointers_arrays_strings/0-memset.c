@@ -4,8 +4,8 @@
  * *_memset - compares two strings
  * @n: unsigned int
  * @b: type char
- * @: type char
- * Return: s which is 
+ * @s: type char
+ * Return: s which is
  */
 
 char *_memset(char *s, char b, unsigned int n)

@@ -21,13 +21,18 @@ int main(int argc, char *argv[])
 			{
 				cent += money / cents[x];
 				money = money % cents[x];
-				if (money % cents[x] ==0)
+				if (money % cents[x] == 0)
 				{
 					break;
 				}
 			}
 		}
 		printf("%d\n", cent);
+	}
+	else
+	{
+		printf("Error\n");
+		return (1);
 	}
 	return (0);
 }

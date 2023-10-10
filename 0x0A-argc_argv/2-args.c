@@ -10,7 +10,8 @@
 int main(int argc, char const *argv[])
 {
 	int x = 0;
-	while(argc--)
+
+	while (argc--)
 	{
 		printf("%s\n", argv[x]);
 		x++;

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - main function
@@ -18,7 +19,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		printf("error");
+		printf("Error\n");
 		return (1);
 	}
 	return (0);

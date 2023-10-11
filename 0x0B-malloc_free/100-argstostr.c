@@ -2,6 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * argstostr - Concatenates all the arguments of the program
+ * @ac: The argument count
+ * @av: Array of argument strings
+ *
+ * Return: Pointer to the concatenated string, or NULL if it fails
+ */
+
 char *argstostr(int ac, char **av)
 {
 	char *str;

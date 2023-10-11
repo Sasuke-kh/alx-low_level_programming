@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib>
 
 /**
  * *_strdup - task function

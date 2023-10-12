@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdlib.h>
 
 /**
@@ -10,12 +11,9 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
     void *allocated_mem;
-    unsigned int total_size;
 
     if (nmemb == 0 || size == 0)
         return (NULL);
-
-    total_size = nmemb * size;
 
     allocated_mem = calloc(nmemb, size);
 

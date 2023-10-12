@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include "main.h" // Include the main.h file
 
 int multiply_numbers(int num1, int num2);
-int _putchar(char c); // Function declaration for _putchar
 
 int main(int argc, char *argv[])
 {
@@ -63,9 +63,4 @@ int main(int argc, char *argv[])
 int multiply_numbers(int num1, int num2)
 {
     return num1 * num2;
-}
-
-int _putchar(char c)
-{
-    return putchar(c);
 }

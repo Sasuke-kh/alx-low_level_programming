@@ -41,5 +41,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	concatenated_str[i] = '\0';
 
-	return concatenated_str;
+	return (concatenated_str);
 }

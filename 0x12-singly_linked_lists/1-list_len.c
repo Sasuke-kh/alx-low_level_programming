@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_list - prints linked list nodes
+ * list_len - prints linked list nodes
  * @h: nude header
  * Return: nude count
  */

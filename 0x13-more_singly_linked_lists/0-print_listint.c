@@ -1,14 +1,14 @@
 #include "lists.h"
 
 /**
- * print_list - prints linked list nodes
+ * print_listint - prints linked list nodes
  * @h: nude header
  * Return: nude count
  */
 
-size_t print_list(const list_t *h)
+size_t print_listint(const listint_t *h)
 {
-	const list_t *ptr = NULL;
+	const listint_t *ptr = NULL;
 	int count = 0;
 
 	ptr = h;

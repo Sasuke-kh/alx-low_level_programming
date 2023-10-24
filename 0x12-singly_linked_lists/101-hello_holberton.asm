@@ -1,24 +1,24 @@
 section .data
-    message db 'Hello, Holberton', 0
+	format db 'Hello, Holberton', 0
 
 section .text
-    extern printf
+	extern printf
 
 global main
 main:
-    push rbp
-    mov rbp, rsp
+	push rbp
+	mov rbp, rsp
 
-    sub rsp, 8 ; Adjust stack pointer for alignment
+	sub rsp, 8 ; Adjust stack pointer for alignment
 
-    lea rdi, [rel message]
-    xor eax, eax ; Clear eax register
-    call printf
+	lea rdi, [rel format]
+	xor eax, eax ; Clear eax register
+	call printf
 
-    add rsp, 8 ; Restore stack pointer
+	add rsp, 8 ; Restore stack pointer
 
-    mov eax, 0 ; Return 0
+	xor eax, eax ; Return 0
 
-    mov rsp, rbp
-    pop rbp
-    ret
+	mov rsp, rbp
+	pop rbp
+	ret

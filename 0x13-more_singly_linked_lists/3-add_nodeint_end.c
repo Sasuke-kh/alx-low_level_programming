@@ -3,16 +3,16 @@
 #include <string.h>
 
 /**
- * add_node_end - add a new node at the beg
+ * add_nodeint_end - add a new node at the beg
  * @head: node header
- * @str: string to duplicate
+ * @n: string to duplicate
  * Return: address of new element
  */
 
-list_t *add_node_end(list_t **head, const char *str)
+list_t *add_nodeint_end(listint_t **head, const int n)
 {
-	list_t *nextptr;
-	list_t *newnode = malloc(sizeof(list_t));
+	listint_t *nextptr;
+	listint_t *newnode = malloc(sizeof(listint_t));
 
 	if (!newnode)
 	{
@@ -20,8 +20,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	newnode->str = strdup(str);
-	newnode->len = strlen(str);
+	newnode->n = n
 	newnode->next = NULL;
 
 	if (*head == NULL)

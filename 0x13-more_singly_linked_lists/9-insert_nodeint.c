@@ -2,16 +2,18 @@
 #include <stdlib.h>
 
 /**
- *
+ * insert_nodeint_at_index - insert node at index
+ * @head: node header
+ * @idx: givan index
+ * @n: node data
+ * Return: adress of node or null if faild
  */
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	unsigned int counter = 1;
-	listint_t *newnode;
-	listint_t *ptr;
+	listint_t *newnode, *ptr = *head;
 
-	ptr = *head;
 	if (idx == 0)
 	{
 		newnode = malloc(sizeof(listint_t));
@@ -28,14 +30,12 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			return (NULL);
 		}
 	}
-	while (counter < idx)
+	while (counter < idx && counter++)
 	{
 		ptr = ptr->next;
 		if (ptr == NULL)
 			return (NULL);
-		counter++;
 	}
-
 	if (ptr != NULL)
 	{
 		newnode = malloc(sizeof(listint_t));
@@ -46,11 +46,8 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			ptr->next = newnode;
 			return (ptr->next);
 		}
-		else
-		{
 			free(newnode);
 			return (NULL);
-		}
 	}
 	else
 	return (NULL);

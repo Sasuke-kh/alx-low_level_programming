@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_listint - free the linked list
+ * free_listint2 - free the linked list
  * @head: list header
  * Return: void
  */
@@ -17,5 +17,5 @@ void free_listint2(listint_t **head)
 		free(ptr);
 		ptr = temp;
 	}
-	*head = NULL;
+	head = NULL;
 }

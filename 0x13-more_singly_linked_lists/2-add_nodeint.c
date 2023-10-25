@@ -5,7 +5,7 @@
 /**
  * add_nodeint - add a new node at the beg
  * @head: node header
- * @str: string to duplicate
+ * @n: string to duplicate
  * Return: address of new element
  */
 

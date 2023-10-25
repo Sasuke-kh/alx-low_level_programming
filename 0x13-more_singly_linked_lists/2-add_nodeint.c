@@ -9,17 +9,16 @@
  * Return: address of new element
  */
 
-list_t *add_node(list_t **head, const char *str)
+listint_t *add_nodeint(listint_t **head, const int n)
 {
-	list_t *newnode = malloc(sizeof(list_t));
+	listint_t *newnode = malloc(sizeof(listint_t));
 
 	if (!newnode)
 	{
 		free(newnode);
 		return (NULL);
 	}
-	newnode->str = strdup(str);
-	newnode->len = strlen(str);
+	newnode->n = n;
 	newnode->next = NULL;
 
 	newnode->next = *head;

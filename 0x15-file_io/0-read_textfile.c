@@ -21,10 +21,18 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	c = malloc(sizeof(char) * letters);
 	if (c == NULL)
+	{
+		free(c);
+		close(file);
 		return (0);
+	}
 	refile = read(file, c, letters);
 	if (refile == -1)
+	{
+		free(c);
+		close(file);
 		return (0);
+	}
 	checkw = write(1, c, refile);
 	if (checkw == -1 || checkw != refile)
 		return (0);

@@ -33,8 +33,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	checkw = write(STDOUT_FILENO, c, refile);
-	free(c);
 	if (checkw != refile)
+	{
+		free(c);
+		close(file);
 		return (0);
+	}
+	free(c);
+	close(file);
 	return (refile);
 }

@@ -35,7 +35,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	checkw = write(1, c, refile);
 	if (checkw == -1 || checkw != refile)
+	{
+		free(c);
+		close(file);
 		return (0);
+	}
 	free(c);
 	close(file);
 	return (refile);

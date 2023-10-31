@@ -30,17 +30,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (refile == -1)
 	{
 		free(c);
-		close(file);
 		return (0);
 	}
-	checkw = write(1, c, refile);
-	if (checkw != refile)
-	{
-		free(c);
-		close(file);
-		return (0);
-	}
+	checkw = write(STDOUT_FILENO, c, refile);
 	free(c);
-	close(file);
+	if (checkw != refile)
+		return (0);
 	return (refile);
 }

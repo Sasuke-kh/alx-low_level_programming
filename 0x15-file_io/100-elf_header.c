@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * bettycheck - just for getting betty checks :)
+ * main - just for getting betty checks :)
  * Return: nothing .
  */
 
-int bettycheck(void)
+int main(void)
 {
 	return (0);
 }
